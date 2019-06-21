@@ -1,0 +1,221 @@
+* {
+	margin:0;
+	padding:0;
+}
+.fondo {
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.logo {
+    color: #fff;
+    margin-top:0px;
+    margin:10px;
+    font-size: 55px;
+    text-decoration: none;
+    font-wheith: bold;
+    letter-spacing: 2px;
+    font-family: butter;
+ }
+#particles-js{
+    /*background: url(Imagenes/cuentista.png);*/
+    background-image: url("Imagenes/cuentista.png");
+    background-position: top;
+    background-attachment: contain;
+    background-size: 420px 420px;
+    background-repeat: no-repeat;    
+}
+ @font-face{
+    font-family: butter;
+    src: url(fuentes/ButterflyKids-Regular.ttf)
+}
+
+header {
+	margin-top:0px;
+    width: 100%;
+    overflow: hidden;
+    height: 105px;
+    position: relative;
+}
+ 
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:1px auto;
+	max-width:640px;
+	width:100%;
+}
+ 
+nav ul {
+	list-style:none;
+}
+ 
+nav > ul {
+	display:table;
+	width:100%;
+	background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+	position:relative;
+}
+ 
+nav > ul li {
+	display:table-cell;
+}
+ 
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:table-cell;
+	height:100%;
+}
+ 
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background:-webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+ 
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+ 
+nav > ul > li > ul > li a:hover {
+    background: #5da5a2;    
+    border: 1px solid rgb(100, 100, 100, 100); /* default color */
+	border: 1px solid rgba(0, 0, 0, 0.3); /* rgba for transparency */
+    
+}
+ 
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+ 
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+ 
+nav > ul > li > a:hover > span {
+	top:0;
+}
+ 
+/*Colores*/
+nav ul li a .cuarto {
+	background:#f64f59;
+}
+ 
+nav ul li a .quinto {
+	background:#12c2e9;
+}
+
+/*Estilos de los Botones*/
+
+.button1 {
+    background:#f0b000;
+    color:#fff
+    left: 0px;
+    position: relative;
+    margin:80px;
+    top: 70px;
+    width: 150px;
+    padding:10px 45px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 0 20px;
+    box-shadow:0px 3px 0px #fff;
+    padding-top:7px;
+}
+.button2 {
+    background:#f0b000;
+    color:#fff
+    left: 0px;
+    position: relative;
+    margin:80px;
+    top: 140px;
+    width: 150px;
+    padding:10px 33px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 0 20px;
+	box-shadow:0px 3px 0px #fff;
+}
+.button3 {
+    background:#f0b000;
+    color:#fff
+    left: 0;
+    position: relative;
+    margin: 80px;
+    top: 210px;
+    width: 150px;
+    padding:10px 48px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 0 20px;
+	box-shadow:0px 3px 0px #fff;
+}
+.button4 {
+    background:#f0b000;
+    color:#fff
+    left: 0;
+    position: relative;
+    margin: 80px;
+    top: 280px;
+    width: 150px;
+    padding:10px 52px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 0 20px;
+	box-shadow:0px 3px 0px #fff;
+}
+.button5 {
+    background:#f0b000;
+    color:#fff
+    left: 0px;
+    position: relative;
+    margin: 80px;
+    top: 350px;
+    width: 150px;
+    padding:10px 48px;
+    text-align:center;
+    text-decoration:none;
+    border-radius: 0 20px;
+	box-shadow:0px 3px 0px #fff;
+}
+.usek{
+    left: 750px;
+    position: relative;
+    margin: 10px;
+    top: 10px;    
+}

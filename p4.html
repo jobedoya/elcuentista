@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+    function capturar13()
+    {
+        var resultado="Seleccione una opción";
+ 
+        var porNombre=document.getElementsByName("p13");
+            for(var i=0;i<porNombre.length;i++)
+        {
+            if(porNombre[i].checked)
+                resultado=porNombre[i].value;
+                localStorage.setItem("Dato13","Correcta");
+        }
+        document.getElementById("respuesta13").innerHTML=" \
+           "+resultado;          
+       
+    }    
+    </script>
+    <script>
+        function capturar14()
+        {
+            var resultado="Seleccione una opción";
+     
+            var porNombre=document.getElementsByName("p14");
+                for(var i=0;i<porNombre.length;i++)
+            {
+                if(porNombre[i].checked)
+                    resultado=porNombre[i].value;
+                    localStorage.setItem("Dato14","Correcta");
+            }
+            document.getElementById("respuesta14").innerHTML=" \
+               "+resultado;          
+           
+        }
+    </script>
+    <script>
+            function capturar15()
+            {
+                var resultado="Seleccione una opción";
+         
+                var porNombre=document.getElementsByName("p15");
+                    for(var i=0;i<porNombre.length;i++)
+                {
+                    if(porNombre[i].checked)
+                        resultado=porNombre[i].value;
+                        localStorage.setItem("Dato15","Correcta");
+                }
+                document.getElementById("respuesta15").innerHTML=" \
+                   "+resultado;          
+               
+            }
+    </script>
+    <script>
+            function capturar16()
+            {
+                var resultado="Seleccione una opción";
+         
+                var porNombre=document.getElementsByName("p16");
+                    for(var i=0;i<porNombre.length;i++)
+                {
+                    if(porNombre[i].checked)
+                        resultado=porNombre[i].value;
+                        localStorage.setItem("Dato16","Correcta");
+                }
+                document.getElementById("respuesta16").innerHTML=" \
+                   "+resultado;          
+               
+            }
+    </script>
+    
+</head>
+<aside>
+        <a href="index.html"><img src="Imagenes/inicio.png"  width="80" height="80" ></a>
+        <img src="imagenes/leon.png" align="right" width="100" height="100">
+        </aside>
+        <body class="fondo">
+            <body style="background-color: #f0b000;" >          
+<body>
+<article>
+    <div align="center">
+    <form id="form13">
+            <h1>IV - Fábula del León y el Ratón</h1>
+            <h4>Valor: Perdon</h4>
+            <h3>IV.1 ¿Por qué el León dejó libre al ratón</h3>
+            <input type="radio" name="p13" value="Intentalo de nuevo" id=pregunta.a1>
+            <label for="pregunta.a1">1.) Porque el Ratón fue astuto y logró escapar</label>
+            <br>
+            <input type="radio" name="p13" value="Bien! Respuesta Correcta" id=pregunta.a2>
+            <label for="pregunta.a2">2.) Porque el León lo perdonó por despertarlo</label>
+            <br>
+            <input type="radio" name="p13" value="No te desanimes, intentalo otra vez" id=pregunta.a3>
+            <label for="pregunta.a3">3.) El ratón se fue rescatado por sus amigos</label>
+            <br>              
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar13()"></p>
+    <h1><div id="respuesta13"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+    <form id="form14">
+            <h4>Valor: Humildad</h4>
+            <h3>IV.2 ¿Cómo logró liberarse el León?</h3>
+            <input type="radio" name="p14" value="Intentalo de nuevo" id=pregunta.b1>
+            <label for="pregunta.b1">1.) Con su fuerza</label>
+            <br>
+            <input type="radio" name="p14" value="No te desanimes, intentalo otra vez" id=pregunta.b2>
+            <label for="pregunta.b2">2.) Con sus dientes</label>
+            <br>
+            <input type="radio" name="p14" value="Bien! Respuesta Correcta" id=pregunta.b3>
+            <label for="pregunta.b3">3.) Con la ayuda del ratón</label>
+            <br>             
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar14()"></p>
+    <h1><div id="respuesta14"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+    <form id="form15">
+                <h4>Defecto: Soberbia</h4>
+                <h3>IV.3 ¿Le sirvió al león su fuerza y grandeza para liberarse solo?</h3>
+                <input type="radio" name="p15" value="No te desanimes, intentalo otra vez" id=pregunta.c1>
+                <label for="pregunta.c1">1.) Logró salir sin ayuda</label>
+                <br>
+                <input type="radio" name="p15" value="Intentalo de nuevo" id=pregunta.c2>
+                <label for="pregunta.c2">2.) Su grandeza evitó que cayese en una trampa</label>
+                <br>
+                <input type="radio" name="p15" value="Bien! Respuesta Correcta" id=pregunta.c3>
+                <label for="pregunta.c3">3.) Necesito ayuda de alguien sin fuerza y grandeza</label>
+                <br>             
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar15()"></p>
+    <h1><div id="respuesta15"></div></h1>
+</div>
+</article>
+<div align="center">
+<article>
+        <form id="form16">
+                    <h4>Defecto: Subestimar</h4>
+                    <h3>IV.4 El Ratón sin fuerza ni grandeza</h3>
+                    <input type="radio" name="p16" value="Bien! Respuesta Correcta" id=pregunta.c1>
+                    <label for="pregunta.c1">1.) Logró sacar al león cortando la cuerda.</label>
+                    <br>
+                    <input type="radio" name="p16" value="Intentalo de nuevo" id=pregunta.c2>
+                    <label for="pregunta.c2">2.) No pudo liberar al león</label>
+                    <br>
+                    <input type="radio" name="p16" value="No te desanimes, intentalo otra vez" id=pregunta.c3>
+                    <label for="pregunta.c3">3.) El león se liberó con su fuerza</label>
+                    <br>             
+        </form>
+        <p><input type="button" value="Revisa" onclick="capturar16()"></p>
+        <h1><div id="respuesta16"></div></h1>
+    </div>
+</article>
+<div align="center">
+<input type="button" value="Actualizar" onclick="location.reload()"/>   
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+    function capturar17()
+    {
+        var resultado="Seleccione una opción";
+ 
+        var porNombre=document.getElementsByName("p17");
+            for(var i=0;i<porNombre.length;i++)
+        {
+            if(porNombre[i].checked)
+                resultado=porNombre[i].value;
+                localStorage.setItem("Dato017","Correcta");
+        }
+        document.getElementById("respuesta17").innerHTML=" \
+           "+resultado;          
+       
+    }    
+    </script>
+    <script>
+        function capturar18()
+        {
+            var resultado="Seleccione una opción";
+     
+            var porNombre=document.getElementsByName("p18");
+                for(var i=0;i<porNombre.length;i++)
+            {
+                if(porNombre[i].checked)
+                    resultado=porNombre[i].value;
+                    localStorage.setItem("Dato18","Correcta");
+            }
+            document.getElementById("respuesta18").innerHTML=" \
+               "+resultado;          
+           
+        }
+    </script>
+       
+</head>
+<aside>
+        <a href="index.html"><img src="Imagenes/inicio.png"  width="80" height="80" ></a>
+        <img src="imagenes/caballo.png" align="right" width="100" height="100">
+        </aside>
+        <body class="fondo">
+            <body style="background-color: #f0b000;" >    
+<body>
+<article>
+        <div align="center">
+    <form id="form17">
+            <h1>V - Fábula del caballo y el Asno</h1>
+            <h4>Valor: Colaborar</h4>
+            <h3>V.1 ¿Que paso cuando el Asno le pidió ayuda al Caballo?</h3>
+            <input type="radio" name="p17" value="Intentalo de nuevo" id=pregunta.a1>
+            <label for="pregunta.a1">1.) ¿El caballo le dio ayuda?</label>
+            <br>
+            <input type="radio" name="p17" value="Bien! Respuesta Correcta" id=pregunta.a2>
+            <label for="pregunta.a2">2.) ¿El caballo lo dejó solo con su carga?</label>
+            <br>
+            <input type="radio" name="p17" value="No te desanimes, intentalo otra vez" id=pregunta.a3>
+            <label for="pregunta.a3">3.) ¿El Caballo pidió que le pusieran mas carga?</label>
+            <br>              
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar17()"></p>
+    <h1><div id="respuesta17"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+    <form id="form18">
+            <h4>Defecto: Egoísmo</h4>
+            <h3>V.2 ¿Por qué el caballo terminó llevando toda la carga?</h3>
+            <input type="radio" name="p18" value="Bien! Respuesta Correcta" id=pregunta.b1>
+            <label for="pregunta.b1">1.) Porque solo pensó en el mismo</label>
+            <br>
+            <input type="radio" name="p18" value="Intentalo de nuevo" id=pregunta.b2>
+            <label for="pregunta.b2">2.) Porque intento ayudar al asno con su carga</label>
+            <br>
+            <input type="radio" name="p18" value="No te desanimes, intentalo otra vez" id=pregunta.b3>
+            <label for="pregunta.b3">3.) Porque que quería terminar más rápido</label>
+            <br>             
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar18()"></p>
+    <h1><div id="respuesta18"></div></h1>
+</div>
+</article>
+<div align="center">
+<input type="button" value="Actualizar" onclick="location.reload()"/>   
+</div>
+</body>
+</html>

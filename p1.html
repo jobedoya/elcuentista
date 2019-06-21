@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilo-copia.css">
+    <script>
+    function capturar1()
+    {
+        var resultado="Seleccione una opción";
+ 
+        var porNombre=document.getElementsByName("p1");
+            for(var i=0;i<porNombre.length;i++)
+        {
+            if(porNombre[i].checked)
+                resultado=porNombre[i].value;
+                localStorage.setItem("Dato01","Correcta");
+        }
+        document.getElementById("respuesta1").innerHTML=" \
+           "+resultado;          
+       
+    }    
+    </script>
+    <script>
+        function capturar2()
+        {
+            var resultado="Seleccione una opción";
+     
+            var porNombre=document.getElementsByName("p2");
+                for(var i=0;i<porNombre.length;i++)
+            {
+                if(porNombre[i].checked)
+                    resultado=porNombre[i].value;
+                    localStorage.setItem("Dato02","Correcta");
+            }
+            document.getElementById("respuesta2").innerHTML=" \
+               "+resultado;          
+           
+        }
+    </script>
+    <script>
+            function capturar3()
+            {
+                var resultado="Seleccione una opción";
+         
+                var porNombre=document.getElementsByName("p3");
+                    for(var i=0;i<porNombre.length;i++)
+                {
+                    if(porNombre[i].checked)
+                        resultado=porNombre[i].value;
+                        localStorage.setItem("Dato03","Correcta");
+                }
+                document.getElementById("respuesta3").innerHTML=" \
+                   "+resultado;          
+               
+            }
+    </script>
+    <script>
+            function capturar4()
+            {
+                var resultado="Seleccione una opción";
+         
+                var porNombre=document.getElementsByName("p4");
+                    for(var i=0;i<porNombre.length;i++)
+                {
+                    if(porNombre[i].checked)
+                        resultado=porNombre[i].value;
+                        localStorage.setItem("Dato04","Correcta");
+                }
+                document.getElementById("respuesta4").innerHTML=" \ "+resultado;          
+               
+            }
+    </script>
+    
+</head>
+<aside>
+<a href="index.html"><img src="Imagenes/inicio.png"  width="80" height="80" ></a>
+<img src="imagenes/TORTUGA.png" align="right" width="100" height="100">
+</aside>
+<body class="fondo">
+<body style="background-color: #f0b000;" >       
+<article>
+    <div align="center">
+    <form id="form1">
+            <h1>I - Fábula de la Liebre y la Tortuga</h1>
+            <h4>Valor: Persistencia</h4>
+            <h3>I.1 ¿De qué manera ganó la carrera la tortuga?</h3>
+            <input type="radio" name="p1" value="Intentalo de nuevo" id=pregunta.a1>
+            <label for="pregunta.a1">1.) Fue más Rápida</label>
+            <br>
+            <input type="radio" name="p1" value="Bien! Respuesta Correcta" id=pregunta.a2>
+            <label for="pregunta.a2">2.) Se mantuvo avanzando sin parar</label>
+            <br>
+            <input type="radio" name="p1" value="No te desanimes, intentalo otra vez" id=pregunta.a3>
+            <label for="pregunta.a3">3.) Descansó un rato y ganó</label>
+            <br>              
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar1()"></p>
+    <h1><div id="respuesta1"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+    <form id="form2">
+            <h4>Valor: Esfuerzo</h4>
+            <h3>I.2 ¿Le fue fácil ganar a la tortuga?</h3>
+            <input type="radio" name="p2" value="Intentalo de nuevo" id=pregunta.b1>
+            <label for="pregunta.b1">1.) La totuga llegó rápido a la meta</label>
+            <br>
+            <input type="radio" name="p2" value="Bien! Respuesta Correcta" id=pregunta.b2>
+            <label for="pregunta.b2">2.) La tortuga ganó fácilmente</label>
+            <br>
+            <input type="radio" name="p2" value="No te desanimes, intentalo otra vez" id=pregunta.b3>
+            <label for="pregunta.b3">3.) Requirió de esfuerzo para ganar</label>
+            <br>             
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar2()"></p>
+    <h1><div id="respuesta2"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+    <form id="form3">
+                <h4>Valor: Esfuerzo</h4>
+                <h3>I.3 ¿Le fue fácil ganar a la tortuga?</h3>
+                <input type="radio" name="p3" value="Intentalo de nuevo" id=pregunta.c1>
+                <label for="pregunta.c1">1.) La totuga llegó rápido a la meta</label>
+                <br>
+                <input type="radio" name="p3" value="Bien! Respuesta Correcta" id=pregunta.c2>
+                <label for="pregunta.c2">2.) La tortuga ganó fácilmente</label>
+                <br>
+                <input type="radio" name="p3" value="No te desanimes, intentalo otra vez" id=pregunta.c3>
+                <label for="pregunta.c3">3.) Requirió de esfuerzo para ganar</label>
+                <br>             
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar3()"></p>
+    <h1><div id="respuesta3"></div></h1>
+    </div>
+</article>
+<article>
+        <div align="center">
+        <form id="form4">
+                    <h4>Valor: Esfuerzo</h4>
+                    <h3>I.4 ¿Le fue fácil ganar a la tortuga?</h3>
+                    <input type="radio" name="p4" value="Intentalo de nuevo" id=pregunta.c1>
+                    <label for="pregunta.c1">1.) La totuga llegó rápido a la meta</label>
+                    <br>
+                    <input type="radio" name="p4" value="Bien! Respuesta Correcta" id=pregunta.c2>
+                    <label for="pregunta.c2">2.) La tortuga ganó fácilmente</label>
+                    <br>
+                    <input type="radio" name="p4" value="No te desanimes, intentalo otra vez" id=pregunta.c3>
+                    <label for="pregunta.c3">3.) Requirió de esfuerzo para ganar</label>
+                    <br>             
+        </form>
+        <p><input type="button" value="Revisa" onclick="capturar4()"></p>
+        <h1><div id="respuesta4"></div></h1>
+        </div>
+</article>
+<div align="center">
+<input type="button" value="Actualizar" onclick="location.reload()"/>   
+</div>
+</body>
+</html>

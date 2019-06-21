@@ -1,0 +1,29 @@
+.fondo{
+    background: hsl(44, 100%, 47%);
+    color: #fff;
+    text-align: center    
+}
+.cabecera{
+    font-size: 30px;
+    text-align: center   
+}
+.estructura{
+    column-count: 1;
+    column-gap: 10px;
+    text-align: center 
+}
+div.layout {
+    text-align: center;
+  }
+  
+  div.centre {
+    text-align: center;
+    width: 600px;
+    background-color: hsl(44, 100%, 47%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+    function capturar5()
+    {
+        var resultado="Seleccione una opción";
+ 
+        var porNombre=document.getElementsByName("p5");
+            for(var i=0;i<porNombre.length;i++)
+        {
+            if(porNombre[i].checked)
+                resultado=porNombre[i].value;
+                localStorage.setItem("Dato05","Correcta");
+        }
+        document.getElementById("respuesta5").innerHTML=" \
+           "+resultado;          
+       
+    }    
+    </script>
+    <script>
+        function capturar6()
+        {
+            var resultado="Seleccione una opción";
+     
+            var porNombre=document.getElementsByName("p6");
+                for(var i=0;i<porNombre.length;i++)
+            {
+                if(porNombre[i].checked)
+                    resultado=porNombre[i].value;
+                    localStorage.setItem("Dato06","Correcta");
+            }
+            document.getElementById("respuesta6").innerHTML=" \
+               "+resultado;          
+           
+        }
+    </script>
+    <script>
+            function capturar7()
+            {
+                var resultado="Seleccione una opción";
+         
+                var porNombre=document.getElementsByName("p7");
+                    for(var i=0;i<porNombre.length;i++)
+                {
+                    if(porNombre[i].checked)
+                        resultado=porNombre[i].value;
+                        localStorage.setItem("Dato07","Correcta");
+                }
+                document.getElementById("respuesta7").innerHTML=" \
+                   "+resultado;          
+               
+            }
+    </script>
+    <script>
+            function capturar8()
+            {
+                var resultado="Seleccione una opción";
+         
+                var porNombre=document.getElementsByName("p8");
+                    for(var i=0;i<porNombre.length;i++)
+                {
+                    if(porNombre[i].checked)
+                        resultado=porNombre[i].value;
+                        localStorage.setItem("Dato08","Correcta");
+                }
+                document.getElementById("respuesta8").innerHTML=" \
+                   "+resultado;          
+               
+            }
+    </script>
+    
+</head>
+<aside>
+    <a href="index.html"><img src="Imagenes/inicio.png"  width="80" height="80" ></a>
+    <img src="imagenes/hormiga.png" align="right" width="100" height="100">
+    </aside>
+    <body class="fondo">
+        <body style="background-color: #f0b000;" >  
+<body>
+<article>
+    <div align="center">
+    <form id="form5">
+            <h1>II - Fábula de la cigarra y la hormiga</h1>
+            <h4>Valor: Responsabilidad</h4>
+            <h3>II.1¿La hormiga trabajó cuando era debido hacerlo??</h3>
+            <input type="radio" name="p5" value="Bien! Respuesta Correcta" id=pregunta.a1>
+            <label for="pregunta.a1">1.) Si</label>
+            <br>
+            <input type="radio" name="p5" value="Intentalo de nuevo" id=pregunta.a2>
+            <label for="pregunta.a2">2.) No</label>
+            <br>                      
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar5()"></p>
+    <h1><div id="respuesta5"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+    <form id="form6">
+            <h4>Valor: Prudencia</h4>
+            <h3>II.2 ¿La hormiga se preparó para pasar el Invierno?</h3>
+            <input type="radio" name="p6" value="Bien! Respuesta Correcta" id=pregunta.b1>
+            <label for="pregunta.b1">1.) Si</label>
+            <br>
+            <input type="radio" name="p6" value="Intentalo de nuevo" id=pregunta.b2>
+            <label for="pregunta.b2">2.) No</label>
+            <br>  
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar6()"></p>
+    <h1><div id="respuesta6"></div></h1>
+</article>
+</div>
+<article>
+        <div align="center">
+    <form id="form7">
+                <h4>Defecto:Pereza</h4>
+                <h3>II.3 ¿Trabajó la Cigarra para pasar el Invierno?</h3>
+                <input type="radio" name="p7" value="Intentalo de nuevo" id=pregunta.c1>
+                <label for="pregunta.c1">1.) Si</label>
+                <br>
+                <input type="radio" name="p7" value="Bien! Respuesta Correcta" id=pregunta.c2>
+                <label for="pregunta.c2">2.) No</label>
+                <br>
+                            
+    </form>
+    <p><input type="button" value="Revisa" onclick="capturar7()"></p>
+    <h1><div id="respuesta7"></div></h1>
+</div>
+</article>
+<article>
+        <div align="center">
+        <form id="form8">
+                    <h4>Defecto: Imprudencia</h4>
+                    <h3>II.4 ¿La Cigarra pensó en guardar para el invierno mientras se divertía?</h3>
+                    <input type="radio" name="p8" value="Intentalo de nuevo" id=pregunta.c1>
+                    <label for="pregunta.c1">1.) Si</label>
+                    <br>
+                    <input type="radio" name="p8" value="Bien! Respuesta Correcta" id=pregunta.c2>
+                    <label for="pregunta.c2">2.) No</label>
+                    <br>
+                              
+        </form>
+        <p><input type="button" value="Revisa" onclick="capturar8()"></p>
+        <h1><div id="respuesta8"></div></h1>
+</article>
+</div>
+<div align="center">
+<input type="button" value="Actualizar" onclick="location.reload()"/>   
+</div>
+</body>
+</html>
